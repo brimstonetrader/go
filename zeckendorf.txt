@@ -1,0 +1,7 @@
+import System.Environment
+b=0:scanl(+)1b
+z 0_=""
+z a(f:g)
+ |a<head g=(show f)++" + "++z(a-f)b
+ |True=z a g
+main=getArgs>>= \r->mapM putStrLn[init$init$z(read a)b|a<-tail r]
